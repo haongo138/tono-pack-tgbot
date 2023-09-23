@@ -1,3 +1,3 @@
-export const Response = {
-  WELCOME: "This is the official Tono Pack Bot 🔫 deployed by @Metaagold. I can snipe call channels, presales and many more to come! Fire /sniper to summon the sniper panel.\nBy proceeding to use the bot, you confirm that you have read and agreed to our Terms of Service (https://www.google.com).",
+export const getWelcomeMessage = (network: string, price: number, gas: number) => {
+  return `Antono Pack Bot\n\nNetwork: ${network.toUpperCase()}  ⬩  ${network.toUpperCase()}: ${price}  ⬩  Gas: ${gas} Gwei\n\n🎯 Bot Features:\n⬩Zero block sniping\n⬩Auto snipe trending launches\n⬩Auto take profits / stop losses\n⬩Low fee structure\n\n❗️By using this bot you are agreeing to our Terms of Service\n\n⬩Read more on Medium\n⬩Bot Update Logs: @DexViewSniper`;
 };
