@@ -19,22 +19,3 @@ bot.on('message', (msg) => {
   const chatId = msg.chat.id;
   bot.sendMessage(chatId, 'Received your message');
 });
-
-// import { Elysia } from "elysia";
-
-// const app = new Elysia();
-
-// app.onError(({ code, error, set }) => {
-//   if (code === "NOT_FOUND") {
-//     set.status = 404;
-//     return "Not Found :(";
-//   }
-// });
-
-// app.get("/health", () => "Service Status is GOOD");
-
-// app.listen(3000, () =>
-//   console.log(
-//     `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
-//   ),
-// );
